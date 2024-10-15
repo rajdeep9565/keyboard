@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1C2833; /* Dark background */
+    flex-direction: column;
+}
+
+#inputField {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.keyboard-container {
+    background-color: #2C3E50;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+.keyboard-left, .keyboard-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center; /* Center the keys */
+    margin-bottom: 10px;
+}
+
+.key {
+    background-color: #ECF0F1;
+    border: 1px solid #7F8C8D;
+    color: #2C3E50;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 60px;  /* Default width */
+    height: 50px; /* Set height for all keys */
+}
+
+.number-key {
+    background-color: #ECF0F1;
+    color: #2C3E50;
+}
+
+.shift-key,
+.clear {
+    width: 90px;  /* Larger size for Shift and Clear keys */
+}
+
+.space-key {
+    width: 400px;  /* Match the space key in the image */
+}
+
+.submit-key {
+    background-color: #2980B9;
+    color: white;
+    width: 160px;  /* Increased width for Submit */
+    height: 50px;  /* Ensure it has the same height as other keys */
+    border-radius: 5px;
+}
+
+.keyboard-right .submit-key {
+    width: 100%;  /* Make it span the full width */
+}
+
+.key:hover {
+    background-color: #BDC3C7;
+}
+
+.key:active {
+    background-color: #95A5A6;
+}
+
+/* Special styling for the Close button (cross icon) */
+.key.close {
+    font-size: 20px;  /* Make the cross icon slightly larger */
+    font-weight: bold;
+    width: 80px;  /* Wider for a clear close button */
+}
+
+/* Specific Clear Button Style */
+.key.clear {
+    background-color: #E74C3C;  /* Red background for the Clear button */
+    color: white;
+}
+
+/* Align the right number keypad as seen inñś the image */
+.keyboard-right {
+    align-items: center;  /* Align to center */
+}
+
+/* Adjust number key widths */
+.keyboard-right .number-key {
+    width: 70px;  /* Adjust width of number keys */
+}
